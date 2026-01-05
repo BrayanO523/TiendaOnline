@@ -1,0 +1,422 @@
+{
+  "version": "1.2",
+  "descripcion": "Seed Firestore: e-commerce de electronica (Restored DOCS structure with New Data)",
+  "docs": [
+    {
+      "ruta": "configuracion/tienda",
+      "datos": {
+        "nombre_tienda": "Mi Tienda Tech",
+        "moneda_por_defecto": "HNL",
+        "impuestos": {
+          "habilitado": false,
+          "tasa": 0.0
+        },
+        "soporte_correo": "soporte@mitiendatech.example",
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T12:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "marcas/apple",
+      "datos": {
+        "id_marca": "apple",
+        "nombre": "Apple",
+        "activo": true,
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2025-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "marcas/samsung",
+      "datos": {
+        "id_marca": "samsung",
+        "nombre": "Samsung",
+        "activo": true,
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2025-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "marcas/sony",
+      "datos": {
+        "id_marca": "sony",
+        "nombre": "Sony",
+        "activo": true,
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2025-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "marcas/dell",
+      "datos": {
+        "id_marca": "dell",
+        "nombre": "Dell",
+        "activo": true,
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2025-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "marcas/logitech",
+      "datos": {
+        "id_marca": "logitech",
+        "nombre": "Logitech",
+        "activo": true,
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2025-01-01T00:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "categorias/smartphones",
+      "datos": {
+        "id_categoria": "smartphones",
+        "nombre": "Smartphones",
+        "slug": "smartphones",
+        "orden": 1,
+        "activa": true
+      }
+    },
+    {
+      "ruta": "categorias/laptops",
+      "datos": {
+        "id_categoria": "laptops",
+        "nombre": "Laptops",
+        "slug": "laptops",
+        "orden": 2,
+        "activa": true
+      }
+    },
+    {
+      "ruta": "categorias/audio",
+      "datos": {
+        "id_categoria": "audio",
+        "nombre": "Audio",
+        "slug": "audio",
+        "orden": 3,
+        "activa": true
+      }
+    },
+    {
+      "ruta": "categorias/perifericos",
+      "datos": {
+        "id_categoria": "perifericos",
+        "nombre": "Periféricos",
+        "slug": "perifericos",
+        "orden": 4,
+        "activa": true
+      }
+    },
+    {
+      "ruta": "productos_publicos/iphone_15_pro",
+      "datos": {
+        "id_producto": "iphone_15_pro",
+        "estado": "activo",
+        "titulo": "iPhone 15 Pro 128GB",
+        "slug": "iphone-15-pro-128gb",
+        "descripcion_corta": "Titanio, Chip A17 Pro, Botón de Acción.",
+        "descripcion": "El primer iPhone con diseño de titanio de calidad aeroespacial. Chip A17 Pro para un rendimiento revolucionario.",
+        "marca_id": "apple",
+        "marca_nombre": "Apple",
+        "categorias_ids": [
+          "smartphones"
+        ],
+        "imagenes": [
+          {
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-1inch-naturaltitanium",
+            "alt": "iPhone 15 Pro Natural",
+            "orden": 0
+          }
+        ],
+        "precio": {
+          "moneda": "HNL",
+          "base": 29999.0,
+          "oferta": 28999.0
+        },
+        "tiene_variantes": false,
+        "variantes": [],
+        "ficha_tecnica": {
+          "pantalla": "6.1 Super Retina XDR",
+          "procesador": "A17 Pro",
+          "almacenamiento": "128GB"
+        },
+        "especificaciones_extra": {},
+        "garantia": {
+          "garantia_meses": 12,
+          "tipo": "Apple Care",
+          "condiciones": "Defectos de fábrica"
+        },
+        "envio": {
+          "requiere_envio": true,
+          "peso_gramos": 187,
+          "bateria_litio": true
+        },
+        "calificaciones": {
+          "promedio": 4.9,
+          "cantidad": 50
+        },
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-01T10:00:00Z"
+        },
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_admin/iphone_15_pro",
+      "datos": {
+        "id_producto": "iphone_15_pro",
+        "costo": 24500.0,
+        "proveedor": {
+          "id_proveedor": "prov_001",
+          "nombre": "iShop Wholesale"
+        },
+        "ubicacion_bodega": "A-12",
+        "notas_internas": "Stock bajo, reordenar pronto.",
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_publicos/s24_ultra",
+      "datos": {
+        "id_producto": "s24_ultra",
+        "estado": "activo",
+        "titulo": "Samsung Galaxy S24 Ultra",
+        "slug": "samsung-galaxy-s24-ultra",
+        "descripcion_corta": "AI Phone, Titanio, S-Pen incluido.",
+        "descripcion": "Galaxy S24 Ultra con Galaxy AI. Edición fotos profesional, traducción en vivo.",
+        "marca_id": "samsung",
+        "marca_nombre": "Samsung",
+        "categorias_ids": [
+          "smartphones"
+        ],
+        "imagenes": [
+          {
+            "url": "https://images.samsung.com/is/image/samsung/p6pim/latin/2401/gallery/latin-galaxy-s24-s928-sm-s928bztqgtgp-thumb-539299496",
+            "alt": "S24 Ultra Titanium Gray",
+            "orden": 0
+          }
+        ],
+        "precio": {
+          "moneda": "HNL",
+          "base": 32999.0
+        },
+        "tiene_variantes": false,
+        "variantes": [],
+        "ficha_tecnica": {
+          "pantalla": "6.8 QHD+",
+          "procesador": "Snapdragon 8 Gen 3",
+          "almacenamiento": "256GB"
+        },
+        "especificaciones_extra": {},
+        "garantia": {
+          "garantia_meses": 12,
+          "tipo": "Samsung",
+          "condiciones": "Defectos de fábrica"
+        },
+        "envio": {
+          "requiere_envio": true,
+          "peso_gramos": 232,
+          "bateria_litio": true
+        },
+        "calificaciones": {
+          "promedio": 4.8,
+          "cantidad": 30
+        },
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-02T10:00:00Z"
+        },
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_admin/s24_ultra",
+      "datos": {
+        "id_producto": "s24_ultra",
+        "costo": 26000.0,
+        "proveedor": {
+          "id_proveedor": "prov_002",
+          "nombre": "Samsung Latam"
+        },
+        "ubicacion_bodega": "A-13",
+        "notas_internas": "Promocionar Galaxy AI.",
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_publicos/macbook_air_m2",
+      "datos": {
+        "id_producto": "macbook_air_m2",
+        "estado": "activo",
+        "titulo": "MacBook Air 13\" M2",
+        "slug": "macbook-air-13-m2",
+        "descripcion_corta": "Súper delgada. Súper rápida.",
+        "descripcion": "Rediseñada alrededor del chip M2 de próxima generación. Increíblemente delgada y con una duración de batería excepcional.",
+        "marca_id": "apple",
+        "marca_nombre": "Apple",
+        "categorias_ids": [
+          "laptops"
+        ],
+        "imagenes": [
+          {
+            "url": "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/macbook-air-midnight-select-20220606",
+            "alt": "MacBook Air Midnight",
+            "orden": 0
+          }
+        ],
+        "precio": {
+          "moneda": "HNL",
+          "base": 24999.0
+        },
+        "tiene_variantes": false,
+        "variantes": [],
+        "ficha_tecnica": {
+          "pantalla": "13.6 Liquid Retina",
+          "procesador": "M2",
+          "ram": "8GB",
+          "ssd": "256GB"
+        },
+        "especificaciones_extra": {},
+        "garantia": {
+          "garantia_meses": 12,
+          "tipo": "Apple",
+          "condiciones": "Global Warranty"
+        },
+        "envio": {
+          "requiere_envio": true,
+          "peso_gramos": 1240,
+          "bateria_litio": true
+        },
+        "calificaciones": {
+          "promedio": 4.9,
+          "cantidad": 85
+        },
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-03T10:00:00Z"
+        },
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_admin/macbook_air_m2",
+      "datos": {
+        "id_producto": "macbook_air_m2",
+        "costo": 19500.0,
+        "proveedor": {
+          "id_proveedor": "prov_001",
+          "nombre": "iShop Wholesale"
+        },
+        "ubicacion_bodega": "B-05",
+        "notas_internas": "Best seller.",
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_publicos/sony_xm5",
+      "datos": {
+        "id_producto": "sony_xm5",
+        "estado": "activo",
+        "titulo": "Sony WH-1000XM5",
+        "slug": "sony-wh-1000xm5-headphones",
+        "descripcion_corta": "Cancelación de ruido líder en la industria.",
+        "descripcion": "Los auriculares WH-1000XM5 reescriben las reglas para escuchar sin distracciones.",
+        "marca_id": "sony",
+        "marca_nombre": "Sony",
+        "categorias_ids": [
+          "audio",
+          "perifericos"
+        ],
+        "imagenes": [
+          {
+            "url": "https://www.sony.hn/image/6145c1d32e6ac8e63a46c912dc33c5bb?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+            "alt": "Sony XM5 Black",
+            "orden": 0
+          }
+        ],
+        "precio": {
+          "moneda": "HNL",
+          "base": 9500.0,
+          "oferta": 8900.0
+        },
+        "tiene_variantes": false,
+        "variantes": [],
+        "ficha_tecnica": {
+          "tipo": "Over-Ear",
+          "anc": "Sí",
+          "bateria": "30 horas"
+        },
+        "especificaciones_extra": {},
+        "garantia": {
+          "garantia_meses": 6,
+          "tipo": "Tienda",
+          "condiciones": ""
+        },
+        "envio": {
+          "requiere_envio": true,
+          "peso_gramos": 250,
+          "bateria_litio": true
+        },
+        "calificaciones": {
+          "promedio": 4.7,
+          "cantidad": 120
+        },
+        "creado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-04T10:00:00Z"
+        },
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    },
+    {
+      "ruta": "productos_admin/sony_xm5",
+      "datos": {
+        "id_producto": "sony_xm5",
+        "costo": 6500.0,
+        "proveedor": {
+          "id_proveedor": "prov_003",
+          "nombre": "Sony Distribuidor"
+        },
+        "ubicacion_bodega": "C-01",
+        "notas_internas": "",
+        "actualizado_en": {
+          "__tipo__": "timestamp",
+          "valor": "2026-01-05T10:00:00Z"
+        }
+      }
+    }
+  ]
+}
